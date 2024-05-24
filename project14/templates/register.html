@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTER</title>
+    <style>
+        body{
+            background: linear-gradient(to right,hotpink,white,aqua);
+        }
+        h1{
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Registration Page</h1>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ECFO.as_p}}
+            <br>
+            <input type="submit" value="register" style="background-color: crimson;">
+        </form>
+    </center>
+</body>
+</html>
